@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FoodApp.Pages.Admin.AdminSystem"
+             Title="Admin System">
+    <ScrollView>
+        <VerticalStackLayout>
+            
+            <Border Margin="5" HorizontalOptions="End" VerticalOptions="Start" WidthRequest="200" HeightRequest="50" StrokeShape="RoundRectangle 10">
+                <Button Clicked="RedirectToAddRecipe" BackgroundColor="#b90d2b" Text="Přidat Recept" TextColor="#fff"></Button>
+            </Border>
+
+            <Border Margin="5" HorizontalOptions="End" VerticalOptions="Start" WidthRequest="200" HeightRequest="50" StrokeShape="RoundRectangle 10">
+                <Button Clicked="RedirectToDeleteRecipe" BackgroundColor="#b90d2b" Text="Smazat Recept" TextColor="#fff"></Button>
+            </Border>
+            
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

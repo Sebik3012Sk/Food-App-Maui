@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:FoodApp"
+       xmlns:pages="clr-namespace:FoodApp.Pages"
+       xmlns:admin="clr-namespace:FoodApp.Pages.Admin"
+       Shell.FlyoutBehavior="Flyout"
+       x:Class="FoodApp.AppShell">
+
+    <ShellItem Title="Domov" Route="MainPage">
+        <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
+    </ShellItem>
+
+    <ShellItem Title="Všechny Recepty" Route="AllRecipes">
+        <ShellContent ContentTemplate="{DataTemplate pages:AllRecipes}" />
+    </ShellItem>
+
+    <ShellItem Title="Fotogalerie" Route="Fotogallery">
+        <ShellContent ContentTemplate="{DataTemplate pages:Fotogallery}" />
+    </ShellItem>
+
+    <ShellItem Title="Admin System" Route="AdminSystem">
+        <ShellContent ContentTemplate="{DataTemplate admin:AdminSystem}" />
+    </ShellItem>
+
+</Shell>
